@@ -14,7 +14,7 @@ ws.onmessage = function(ev) {
     for (var i = 0; i < gpslog.length; ++i) {
         txt += gpslog[i] + '<br>';
     }
-    document.getElementById('sidebar').innerHTML = txt;
+    document.getElementById('footer').innerHTML = txt;
 
     // Analyzing receive data
     var splitstr = gpslog[0].split(/\s+/);

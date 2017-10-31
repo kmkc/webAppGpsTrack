@@ -1,7 +1,28 @@
-div.olControlAttribution {
-    bottom: 3px;
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#ui {
+    display: grid;
+}
+
+#header {
+    height: 1em;
+    font-size: 5em;
+    background-color: lightblue;
 }
 
 #main {
     height: 700px;
+}
+
+#footer {
+    background-color: lightblue;
+    font-size: 3em;
+}
+
+div.olControlAttribution {
+    bottom: 3px;
 }
