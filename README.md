@@ -8,11 +8,6 @@ Get source
 git clone https://github.com/kmkc/webAppGpsTrack.git
 ```
 
-Change souce
----
-
-You should change `hogehoge.xyz:3000` in client.py
-
 Start system
 ---
 
