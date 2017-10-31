@@ -5,15 +5,17 @@ var logs = []
 
 ws = new WebSocket('ws://' + host + '/websocket');
 ws.onmessage = function(ev) {
+    // Add to GPS array
     logs.push(ev.data);
-    if (logs.length > 5) {
+    if (logs.length > max) {
         logs.shift();
     }
 
+    // Change HTML text
     var txt = '';
-    for (var i = 0; i < logs.length; ++i) {
-        txt += logs[i] + '<br>';
+    for (var i = logs.length; i > 0; --i) {
+        txt += logs[i-1] + '<br>';
     }
 
-    document.getElementById('val').innerHTML = txt;
+    document.getElementById('sidebar').innerHTML = txt;
 }
