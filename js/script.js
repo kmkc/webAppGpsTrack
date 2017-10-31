@@ -18,10 +18,11 @@ ws.onmessage = function(ev) {
 
     // Analyzing receive data
     var splitstr = gpslog[0].split(/\s+/);
-    alert(gpslog[0]);
+    console.log(gpslog[0]);
 
     // Descript pin and popup on the map
     var latlon = splitstr[2].split(',');
+    console.log(latlon);
     pin.unshift(L.marker([parseFloat(latlon[0]),
                           parseFloat(latlon[1])]));
     pin[0].addTo(map001);
