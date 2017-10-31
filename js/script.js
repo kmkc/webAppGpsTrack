@@ -17,7 +17,8 @@ ws.onmessage = function(ev) {
     document.getElementById('sidebar').innerHTML = txt;
 
     // Analyzing receive data
-    var splitstr = gpslog[0].split(' ');
+    var splitstr = gpslog[0].split(/\s+/);
+    alert(gpslog[0]);
 
     // Descript pin and popup on the map
     var latlon = splitstr[2].split(',');
