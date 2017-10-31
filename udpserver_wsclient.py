@@ -4,10 +4,10 @@ from websocket import create_connection
 
 # socket; Low-level networking interface
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-s.bind(('', 39152))
+s.bind(('', 39153))
 
 # websocket
-ws = create_connection('ws://localhost:3000/websocket')
+ws = create_connection('ws://localhost:3001/websocket')
 
 while True:
     try:
